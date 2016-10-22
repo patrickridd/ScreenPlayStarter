@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Characters" syncable="YES">
+        <attribute name="charcterDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Scene" syncable="YES">
+        <attribute name="images" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sceneDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Screenplay" syncable="YES">
+        <attribute name="basicDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Screenplay" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Characters" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="Scene" positionX="-36" positionY="27" width="128" height="90"/>
+    </elements>
+</model>
