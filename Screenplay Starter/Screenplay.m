@@ -7,9 +7,14 @@
 //
 
 #import "Screenplay.h"
+#import <CoreData/CoreData.h>
 
 @implementation Screenplay
 
+@dynamic title;
+@dynamic description;
+@dynamic characters;
+@dynamic scenes;
 
 
 @end

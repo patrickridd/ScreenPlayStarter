@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Scene : NSObject
+@interface Scene : NSManagedObjectContext
 
-@property (nonatomic, copy) NSMutableArray *images;
-@property (nonatomic, copy) NSMutableString *title;
+@property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, strong) NSMutableString *title;
 @property int index;
-
+@property (nonatomic, strong) NSMutableString *basicDescription;
 
 @end

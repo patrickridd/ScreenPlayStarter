@@ -10,4 +10,8 @@
 
 @implementation Character
 
+@dynamic name;
+@dynamic basicDescription;
+
+
 @end

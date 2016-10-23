@@ -13,6 +13,8 @@
 
 @property (strong) NSManagedObjectContext *managedObjectContext;
 
-- (void)initializeCoreData;
++(instancetype)sharedInstance;
+-(void)initializeCoreData;
+-(void)saveContext;
 
 @end

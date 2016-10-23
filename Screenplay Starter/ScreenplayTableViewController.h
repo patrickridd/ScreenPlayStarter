@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScreenplayController.h"
+#import "Screenplay.h"
+#import <CoreData/CoreData.h>
 
-@interface ScreenplayTableViewController : UITableViewController
+@interface ScreenplayTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @end

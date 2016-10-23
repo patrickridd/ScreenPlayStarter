@@ -19,6 +19,9 @@
 		2177829F1DBBEEC500E868E0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2177829D1DBBEEC500E868E0 /* Model.xcdatamodeld */; };
 		217782A21DBBF23500E868E0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217782A11DBBF23500E868E0 /* CoreData.framework */; };
 		217782A51DBBF4D200E868E0 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 217782A41DBBF4D200E868E0 /* CoreDataStack.m */; };
+		217782C21DBD2F7E00E868E0 /* SceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217782C11DBD2F7E00E868E0 /* SceneController.m */; };
+		217782C51DBD2F8B00E868E0 /* CharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217782C41DBD2F8B00E868E0 /* CharacterController.m */; };
+		217782C81DBD2F9F00E868E0 /* ScreenplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217782C71DBD2F9F00E868E0 /* ScreenplayController.m */; };
 		21C1FA5B1DBBD64C000B5998 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1FA5A1DBBD64C000B5998 /* main.m */; };
 		21C1FA5E1DBBD64C000B5998 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1FA5D1DBBD64C000B5998 /* AppDelegate.m */; };
 		21C1FA641DBBD64C000B5998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C1FA621DBBD64C000B5998 /* Main.storyboard */; };
@@ -60,6 +63,13 @@
 		217782A11DBBF23500E868E0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		217782A31DBBF4D200E868E0 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		217782A41DBBF4D200E868E0 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		217782A71DBD2EAC00E868E0 /* Screenplay Starter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screenplay Starter-Bridging-Header.h"; sourceTree = "<group>"; };
+		217782C01DBD2F7E00E868E0 /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
+		217782C11DBD2F7E00E868E0 /* SceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneController.m; sourceTree = "<group>"; };
+		217782C31DBD2F8B00E868E0 /* CharacterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterController.h; sourceTree = "<group>"; };
+		217782C41DBD2F8B00E868E0 /* CharacterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterController.m; sourceTree = "<group>"; };
+		217782C61DBD2F9F00E868E0 /* ScreenplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenplayController.h; sourceTree = "<group>"; };
+		217782C71DBD2F9F00E868E0 /* ScreenplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenplayController.m; sourceTree = "<group>"; };
 		21C1FA561DBBD64C000B5998 /* Screenplay Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screenplay Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C1FA5A1DBBD64C000B5998 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21C1FA5C1DBBD64C000B5998 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +137,12 @@
 		2177829C1DBBEE8F00E868E0 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				217782C01DBD2F7E00E868E0 /* SceneController.h */,
+				217782C11DBD2F7E00E868E0 /* SceneController.m */,
+				217782C31DBD2F8B00E868E0 /* CharacterController.h */,
+				217782C41DBD2F8B00E868E0 /* CharacterController.m */,
+				217782C61DBD2F9F00E868E0 /* ScreenplayController.h */,
+				217782C71DBD2F9F00E868E0 /* ScreenplayController.m */,
 			);
 			name = ModelController;
 			sourceTree = "<group>";
@@ -139,14 +155,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		217782A61DBBF57700E868E0 /* CoreData */ = {
+		217782A61DBBF57700E868E0 /* CoreDataStack */ = {
 			isa = PBXGroup;
 			children = (
 				2177829D1DBBEEC500E868E0 /* Model.xcdatamodeld */,
 				217782A31DBBF4D200E868E0 /* CoreDataStack.h */,
 				217782A41DBBF4D200E868E0 /* CoreDataStack.m */,
 			);
-			name = CoreData;
+			name = CoreDataStack;
 			sourceTree = "<group>";
 		};
 		21C1FA4D1DBBD64C000B5998 = {
@@ -156,6 +172,7 @@
 				21C1FA721DBBD64C000B5998 /* Screenplay StarterTests */,
 				21C1FA571DBBD64C000B5998 /* Products */,
 				217782A01DBBF23500E868E0 /* Frameworks */,
+				217782A71DBD2EAC00E868E0 /* Screenplay Starter-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,7 +190,7 @@
 			children = (
 				21C1FA5C1DBBD64C000B5998 /* AppDelegate.h */,
 				21C1FA5D1DBBD64C000B5998 /* AppDelegate.m */,
-				217782A61DBBF57700E868E0 /* CoreData */,
+				217782A61DBBF57700E868E0 /* CoreDataStack */,
 				217782951DBBEB8A00E868E0 /* Model */,
 				2177829C1DBBEE8F00E868E0 /* ModelController */,
 				217782821DBBE1D200E868E0 /* ViewController */,
@@ -252,6 +269,7 @@
 				TargetAttributes = {
 					21C1FA551DBBD64C000B5998 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					21C1FA6E1DBBD64C000B5998 = {
@@ -306,15 +324,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C1FA5E1DBBD64C000B5998 /* AppDelegate.m in Sources */,
+				217782C81DBD2F9F00E868E0 /* ScreenplayController.m in Sources */,
 				217782981DBBEBA500E868E0 /* Character.m in Sources */,
 				217782A51DBBF4D200E868E0 /* CoreDataStack.m in Sources */,
 				217782811DBBE1BF00E868E0 /* ScreenplayTableViewController.m in Sources */,
+				217782C21DBD2F7E00E868E0 /* SceneController.m in Sources */,
 				217782851DBBE24200E868E0 /* ScreenplayDetailViewController.m in Sources */,
 				2177829B1DBBEDD800E868E0 /* Scene.m in Sources */,
 				21C1FA5B1DBBD64C000B5998 /* main.m in Sources */,
 				2177828E1DBBE29300E868E0 /* StoryboardCollectionViewController.m in Sources */,
 				217782941DBBEB1600E868E0 /* Screenplay.m in Sources */,
 				217782911DBBE3FF00E868E0 /* SceneViewController.m in Sources */,
+				217782C51DBD2F8B00E868E0 /* CharacterController.m in Sources */,
 				217782881DBBE25A00E868E0 /* CharacterTableViewController.m in Sources */,
 				2177828B1DBBE26F00E868E0 /* CharacterDetailViewController.m in Sources */,
 				2177829F1DBBEEC500E868E0 /* Model.xcdatamodeld in Sources */,
@@ -451,10 +472,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Screenplay Starter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PatrickRidd.Screenplay-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Screenplay Starter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -462,10 +487,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Screenplay Starter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PatrickRidd.Screenplay-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Screenplay Starter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

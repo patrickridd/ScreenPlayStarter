@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Screenplay.h"
+#import "ScreenplayController.h"
 @interface ScreenplayDetailViewController : UIViewController
+
 
 @end

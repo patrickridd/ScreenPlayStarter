@@ -10,5 +10,9 @@
 
 @implementation Scene
 
+@dynamic title;
+@dynamic index;
+@dynamic images;
+@dynamic basicDescription;
 
 @end

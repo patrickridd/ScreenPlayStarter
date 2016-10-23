@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Character : NSObject
+@interface Character : NSManagedObject
 
-@property (nonatomic,copy) NSMutableString *name;
-@property (nonatomic, copy) NSMutableString *description;
-
+@property (nonatomic,strong) NSMutableString *name;
+@property (nonatomic, strong) NSMutableString *basicDescription;
 
 
 @end

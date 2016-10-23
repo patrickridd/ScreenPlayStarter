@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Screenplay : NSObject
+#import <CoreData/CoreData.h>
 
-@property (nonatomic, copy) NSMutableString *title;
-@property (nonatomic, copy) NSMutableString *description;
+@interface Screenplay : NSManagedObject
 
-@property (nonatomic,copy) NSMutableArray *characters;
+@property (nonatomic, strong) NSMutableString *title;
+@property (nonatomic, strong) NSMutableString *description;
 
-
+@property (nonatomic,strong) NSMutableArray *characters;
+@property (nonatomic,strong) NSMutableArray *scenes;
 
 @end
+
