@@ -7,8 +7,9 @@
 //
 
 #import "ScreenplayTableViewController.h"
+#import "ScreenplayDetailViewController.h"
 
-@interface ScreenplayTableViewController ()
+@interface ScreenplayTableViewController()
 
 @end
 
@@ -106,8 +107,15 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"screenplayDetail"]) {
+        
+        // Get the new view controller using [segue destinationViewController].
+        ScreenplayDetailViewController  *detailViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Screenplay *screenplay = [[[ScreenplayController sharedInstance] fetchedResultsController]objectAtIndexPath:indexPath];
+        // Pass the selected object to the new view controller.
+        detailViewController.screenplay = screenplay;
+    }
 }
 
 

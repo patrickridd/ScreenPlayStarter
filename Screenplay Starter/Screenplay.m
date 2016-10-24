@@ -12,7 +12,7 @@
 @implementation Screenplay
 
 @dynamic title;
-@dynamic description;
+@dynamic basicDescription;
 @dynamic characters;
 @dynamic scenes;
 

@@ -7,13 +7,16 @@
 //
 
 #import "ScreenplayDetailViewController.h"
+#import "Screenplay.h"
+#import "Scene.h"
+#import "Character.h"
+#import <CoreData/CoreData.h>
 
 @interface ScreenplayDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ScreenplayDetailViewController
@@ -22,20 +25,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateScreenplayDetail:[self screenplay]];
 }
 
 
 
+-(void)updateScreenplayDetail:(Screenplay*)screenplay {
+    if ([[screenplay title] isEqualToString:@""])
+        return;
+    NSString *title = screenplay.title;
+    self.titleTextField.text = title;
+    NSString *basicDescription = screenplay.basicDescription;
+    self.textView.text = basicDescription;
+    
+    
+    
+    
+}
+
 - (IBAction)saveButtonTapped:(id)sender {
+    if ([[[self titleTextField]text]isEqualToString:@""])
+        return;
+    
+    NSString *description = [[self textView]text];
     NSString *title = _titleTextField.text;
+    NSMutableString *newDescription = [[NSMutableString alloc]initWithString:description];
+    
     NSMutableString *newTitle = [[NSMutableString alloc]initWithString:title];
-    [[ScreenplayController sharedInstance] createScreenplay:newTitle];
+    [[ScreenplayController sharedInstance] createScreenplay:newTitle description:newDescription];
     _titleTextField.text = @"";
     [[self navigationController] popToRootViewControllerAnimated:true];
     
 }
 
+
+- (void)setPlaylist:(Screenplay *)screenplay
+{
+    if (_screenplay != screenplay) {
+        _screenplay = screenplay;
+        [self.tableView reloadData];
+    }
+}
 
 
 

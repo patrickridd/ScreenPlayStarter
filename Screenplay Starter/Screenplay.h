@@ -13,7 +13,7 @@
 @interface Screenplay : NSManagedObject
 
 @property (nonatomic, strong) NSMutableString *title;
-@property (nonatomic, strong) NSMutableString *description;
+@property (nonatomic, strong) NSMutableString *basicDescription;
 
 @property (nonatomic,strong) NSMutableArray *characters;
 @property (nonatomic,strong) NSMutableArray *scenes;

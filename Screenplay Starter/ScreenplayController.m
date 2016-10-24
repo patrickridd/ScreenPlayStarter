@@ -51,11 +51,12 @@
     }
 }
 
--(void)createScreenplay:(NSMutableString*)title;
+-(void)createScreenplay:(NSMutableString*)title description:(NSMutableString*)description;
 {
     NSManagedObjectContext *moc = [[CoreDataStack sharedInstance] managedObjectContext]; //Retrieve the main queue NSManagedObjectContext
     Screenplay *screenplay = [NSEntityDescription insertNewObjectForEntityForName:@"Screenplay" inManagedObjectContext:moc];
     screenplay.title = title;
+    screenplay.basicDescription = description;
     
     [[CoreDataStack sharedInstance] saveContext];
     

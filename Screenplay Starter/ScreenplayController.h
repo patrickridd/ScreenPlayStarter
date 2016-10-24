@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 + (instancetype)sharedInstance;
--(void)createScreenplay:(NSMutableString*)title;
+-(void)createScreenplay:(NSMutableString*)title description:(NSMutableString*)description;
 
 
 @end
