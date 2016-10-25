@@ -72,7 +72,7 @@
                             </textView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Df-4y-Odn">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="1nZ-3d-UHE"/>
+                                    <constraint firstAttribute="height" constant="88" id="1nZ-3d-UHE"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="S52-8W-s4S" kind="embed" id="Gif-Ij-EHy"/>
@@ -114,7 +114,7 @@
             <objects>
                 <tableViewController id="tiE-Y3-M6v" customClass="CharacterTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zah-zt-wEH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -158,15 +158,15 @@
                         <viewControllerLayoutGuide type="bottom" id="Xxr-BC-RUj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h6s-K0-Aan">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-iR-Q6m">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-iR-Q6m">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgG-zx-Vfy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Character name here and description below..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgG-zx-Vfy">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="8Aq-OQ-jij"/>
                                 </constraints>
@@ -175,12 +175,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.72148895260000001" green="0.72161453959999999" blue="0.72148102520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rsY-iR-Q6m" firstAttribute="leading" secondItem="h6s-K0-Aan" secondAttribute="leading" id="5A9-O6-8cU"/>
                             <constraint firstAttribute="trailing" secondItem="NgG-zx-Vfy" secondAttribute="trailing" id="71Y-TW-V5z"/>
-                            <constraint firstItem="rsY-iR-Q6m" firstAttribute="top" secondItem="NgG-zx-Vfy" secondAttribute="bottom" constant="20" id="IX8-4K-BMZ"/>
-                            <constraint firstItem="NgG-zx-Vfy" firstAttribute="top" secondItem="C1A-Lw-UOz" secondAttribute="bottom" id="Pa3-R2-Cof"/>
+                            <constraint firstItem="rsY-iR-Q6m" firstAttribute="top" secondItem="NgG-zx-Vfy" secondAttribute="bottom" constant="15" id="IX8-4K-BMZ"/>
+                            <constraint firstItem="NgG-zx-Vfy" firstAttribute="top" secondItem="C1A-Lw-UOz" secondAttribute="bottom" constant="5" id="Pa3-R2-Cof"/>
                             <constraint firstAttribute="trailing" secondItem="rsY-iR-Q6m" secondAttribute="trailing" id="r8V-4r-VPE"/>
                             <constraint firstItem="Xxr-BC-RUj" firstAttribute="top" secondItem="rsY-iR-Q6m" secondAttribute="bottom" constant="20" id="scs-em-f3D"/>
                             <constraint firstItem="NgG-zx-Vfy" firstAttribute="leading" secondItem="h6s-K0-Aan" secondAttribute="leading" id="ulO-O7-7L2"/>
@@ -199,7 +199,7 @@
             <objects>
                 <collectionViewController id="vbn-sC-ywB" customClass="StoryboardCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="zof-PO-WeG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4k3-Wp-6B2">
@@ -248,7 +248,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jqz-A4-rq9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zWn-dz-o24">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4a6-d5-uE7"/>
@@ -315,7 +315,7 @@
             <objects>
                 <tableViewController id="S52-8W-s4S" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cur-TP-EYh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -337,6 +337,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tiE-Y3-M6v" kind="show" id="GJm-gn-Toq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="beR-jR-7Ao" style="IBUITableViewCellStyleDefault" id="hp5-sy-IUm">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -354,6 +357,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vbn-sC-ywB" kind="show" id="OIq-Cz-N1v"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

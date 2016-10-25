@@ -36,7 +36,7 @@
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Screenplay"];
     
-     NSSortDescriptor *titleSort = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES];
+     NSSortDescriptor *titleSort = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:NO];
     
     [request setSortDescriptors:@[titleSort]];
     
@@ -62,6 +62,13 @@
     
 }
 
+-(void)removeScreenplay:(Screenplay*)screenplay;
+{
+    NSManagedObjectContext *moc = [[CoreDataStack sharedInstance]managedObjectContext];
+    [moc deleteObject:screenplay];
+    [[CoreDataStack sharedInstance]saveContext];
+    
+}
 
 
 
