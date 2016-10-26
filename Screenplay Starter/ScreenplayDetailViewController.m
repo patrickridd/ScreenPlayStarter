@@ -59,7 +59,7 @@
 }
 
 
-- (void)setPlaylist:(Screenplay *)screenplay
+- (void)setScreenPlay:(Screenplay *)screenplay
 {
     if (_screenplay != screenplay) {
         _screenplay = screenplay;

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CharacterController.h"
+#import "Character.h"
 
 @interface CharacterDetailViewController : UIViewController
+
+@property (weak) Character *character;
 
 @end

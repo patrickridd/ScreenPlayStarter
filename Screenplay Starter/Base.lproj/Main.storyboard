@@ -126,7 +126,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cUc-se-Wv6" kind="show" id="JSV-HD-JQG"/>
+                                    <segue destination="cUc-se-Wv6" kind="show" identifier="characterSegue" id="JSV-HD-JQG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -147,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCf-I1-2ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="-182"/>
+            <point key="canvasLocation" x="2586" y="-150"/>
         </scene>
         <!--Title-->
         <scene sceneID="6Io-Qw-CjC">
@@ -187,12 +187,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="eG8-M2-Wah">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QRr-zw-957"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QRr-zw-957">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="cUc-se-Wv6" id="q6a-fd-DJe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="rsY-iR-Q6m" id="VUv-6X-Wyx"/>
+                        <outlet property="nameTextField" destination="NgG-zx-Vfy" id="T0b-Hz-TVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoh-66-rgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3047" y="-45"/>
+            <point key="canvasLocation" x="3370" y="170"/>
         </scene>
         <!--Storyboard-->
         <scene sceneID="INq-FJ-bzr">
@@ -376,7 +384,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mNN-tZ-qdL"/>
+        <segue reference="JSV-HD-JQG"/>
         <segue reference="yBv-gp-AhB"/>
         <segue reference="fi4-3S-yLf"/>
     </inferredMetricsTieBreakers>

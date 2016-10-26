@@ -52,9 +52,16 @@
 }
 
 
--(void)createCharacter:(NSString*)name;
+-(void)createCharacter:(NSString*)name characterDescription:(NSString*)characterDescription;
 {
+     NSManagedObjectContext *moc = [[CoreDataStack sharedInstance] managedObjectContext]; //Retrieve the main queue NSManagedObjectContext
+    Character *character = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:moc];
+    NSMutableString *newName = [[NSMutableString alloc]initWithString:name];
+    NSMutableString *newCharacterDescription = [[NSMutableString alloc]initWithString:characterDescription];
+    character.name = newName;
+    character.charcterDescription = newCharacterDescription;
     
+    [[CoreDataStack sharedInstance]saveContext];
 }
 
 -(void)removeCharacter:(Character*)character;

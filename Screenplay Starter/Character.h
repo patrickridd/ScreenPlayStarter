@@ -12,7 +12,7 @@
 @interface Character : NSManagedObject
 
 @property (nonatomic,strong) NSMutableString *name;
-@property (nonatomic, strong) NSMutableString *basicDescription;
+@property (nonatomic, strong) NSMutableString *charcterDescription;
 
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataStack.h"
 
-@interface CharacterTableViewController : UITableViewController
+@interface CharacterTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @end

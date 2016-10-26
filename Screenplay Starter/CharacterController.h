@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "CoreDataStack.h"
 #import "Character.h"
+
 @interface CharacterController : NSObject
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 + (instancetype)sharedInstance;
 -(void)removeCharacter:(Character*)character;
--(void)createCharacter:(NSString*)name;
+-(void)createCharacter:(NSString*)name characterDescription:(NSString*)characterDescription;
 
 
 @end

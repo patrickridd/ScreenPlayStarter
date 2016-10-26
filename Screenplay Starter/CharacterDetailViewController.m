@@ -10,19 +10,43 @@
 
 @interface CharacterDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+
+
 @end
 
 @implementation CharacterDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self updateWithCharacter:[self character]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)updateWithCharacter:(Character*)character
+{
+
+    NSString *name = character.name;
+    NSString *characterDescription = character.charcterDescription;
+    
+    self.nameTextField.text = name;
+    self.descriptionTextView.text = characterDescription;
 }
+
+- (IBAction)saveButtonTapped:(id)sender
+{
+    
+    // If user did not enter name in textfield dont save and return
+    if ([[[self nameTextField]text] isEqual:@""])
+        return;
+    NSString *name = [[self nameTextField]text];
+    NSString *characterDescription = [[self descriptionTextView]text];
+    
+    [[CharacterController sharedInstance]createCharacter:name characterDescription:characterDescription];
+    [[self navigationController] popToRootViewControllerAnimated:true];
+}
+
 
 /*
 #pragma mark - Navigation

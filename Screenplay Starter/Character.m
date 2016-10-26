@@ -11,7 +11,7 @@
 @implementation Character
 
 @dynamic name;
-@dynamic basicDescription;
+@dynamic charcterDescription;
 
 
 @end
