@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Scene.h"
 
-@interface SceneViewController : UIViewController
+@interface SceneViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (strong) Scene *scene;
 
-@property (weak) Scene *scene;
 
 @end

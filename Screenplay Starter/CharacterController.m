@@ -8,7 +8,6 @@
 
 #import "CharacterController.h"
 #import <CoreData/CoreData.h>
-#import "CoreDataStack.h"
 
 @implementation CharacterController
 

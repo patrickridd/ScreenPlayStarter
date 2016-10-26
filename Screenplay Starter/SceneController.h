@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Scene.h"
+#import "CoreDataStack.h"
+#import <CoreData/CoreData.h>
 
 @interface SceneController : NSObject
 

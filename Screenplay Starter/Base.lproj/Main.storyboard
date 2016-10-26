@@ -234,7 +234,7 @@
                                     <constraint firstItem="qJX-M2-39e" firstAttribute="leading" secondItem="ECS-fB-ik9" secondAttribute="leading" id="dyP-HP-cOb"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="cyR-N2-QSG" kind="show" id="cUm-AA-Svq"/>
+                                    <segue destination="cyR-N2-QSG" kind="show" identifier="sceneSegue" id="cUm-AA-Svq"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -246,7 +246,7 @@
                     <navigationItem key="navigationItem" title="Storyboard" id="lk4-bt-5QA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dvv-Nc-VXb">
                             <connections>
-                                <segue destination="cyR-N2-QSG" kind="show" identifier="sceneSegue" id="fi4-3S-yLf"/>
+                                <segue destination="cyR-N2-QSG" kind="show" id="Gw8-8J-d2y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -294,11 +294,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Scene" id="rch-h9-i2e">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4dj-P9-MUS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4dj-P9-MUS">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="cyR-N2-QSG" id="zGH-Mx-whI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="sceneDescription" destination="qqW-a1-1eq" id="B4e-TO-0Je"/>
                         <outlet property="sceneDescriptionTextView" destination="qqW-a1-1eq" id="eoG-bh-hdz"/>
                         <outlet property="sceneImageView" destination="4a6-d5-uE7" id="Ex3-LB-xVX"/>
                     </connections>
@@ -412,6 +415,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="JSV-HD-JQG"/>
         <segue reference="yBv-gp-AhB"/>
-        <segue reference="fi4-3S-yLf"/>
+        <segue reference="Gw8-8J-d2y"/>
     </inferredMetricsTieBreakers>
 </document>

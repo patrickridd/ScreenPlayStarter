@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>ScriptStarter would like to access your camera to help set your scene&apos;s picture.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ScriptStarter would like to access your photos to help set your scene&apos;s picture.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

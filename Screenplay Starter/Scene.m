@@ -12,7 +12,7 @@
 
 @dynamic title;
 @dynamic index;
-@dynamic images;
-@dynamic basicDescription;
+@dynamic sceneImage;
+@dynamic sceneDescription;
 
 @end
