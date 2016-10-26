@@ -11,7 +11,7 @@
 
 @interface Scene : NSManagedObjectContext
 
-@property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, strong) UIImage *sceneImage;
 @property (nonatomic, strong) NSMutableString *title;
 @property int index;
 @property (nonatomic, strong) NSMutableString *basicDescription;

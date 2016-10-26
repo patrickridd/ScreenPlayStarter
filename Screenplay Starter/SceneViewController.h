@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scene.h"
 
 @interface SceneViewController : UIViewController
+
+@property (weak) Scene *scene;
 
 @end

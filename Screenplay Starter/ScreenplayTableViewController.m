@@ -114,7 +114,14 @@
         Screenplay *screenplay = [[[ScreenplayController sharedInstance] fetchedResultsController]objectAtIndexPath:indexPath];
         // Pass the selected object to the new view controller.
         detailViewController.screenplay = screenplay;
+    } else if ([segue.identifier isEqualToString:@"storyboardSegue"]) {
+        
+        
+        
+        
     }
+    
+    
 }
 
 

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scene.h"
+#import "SceneController.h"
 
 @interface StoryboardCollectionViewController : UICollectionViewController
+
+@property (weak) NSMutableArray *scenes;
 
 @end
